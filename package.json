@@ -1,6 +1,6 @@
 {
   "name": "@yaldram/react-vite-lib",
-  "version": "0.0.2-alpha.1",
+  "version": "0.0.2-alpha.2",
   "description": "A react library starter with styled components and vite as build tool.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
