@@ -39,9 +39,9 @@ jobs:
         run: yarn run build-storybook
         
       - name: Upload storybook build to the dev S3 bucket
-        if: github.ref == 'refs/head/dev'
+        if: github.ref == 'refs/heads/dev'
         run: aws s3 sync ./storybook-static/ s3://react-vite-lib-dev --delete
 
       - name: Upload storybook build to the master S3 bucket
-        if: github.ref == 'refs/head/master'
+        if: github.ref == 'refs/heads/master'
         run: aws s3 sync ./storybook-static/ s3://react-vite-lib-prod --delete
