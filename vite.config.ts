@@ -14,9 +14,17 @@ export default defineConfig({
       formats: ['es', 'cjs', 'umd'],
       fileName: 'index',
     },
+
     rollupOptions: {
       external: [...Object.keys(peerDependencies)],
       plugins: [typescript({ tsconfig: './tsconfig.json' })],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDom',
+          'styled-components': 'styled',
+        },
+      },
     },
   },
 });

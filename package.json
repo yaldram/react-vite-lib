@@ -29,6 +29,9 @@
   "bugs": {
     "url": "https://github.com/yaldram/react-vite-lib/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/yaldram"
+  },
   "scripts": {
     "build": "tsc && vite build",
     "commit": "git-cz",
